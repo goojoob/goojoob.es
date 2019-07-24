@@ -105,7 +105,8 @@ function year2009() {
 }
 
 function muestraTexto() {
-    //$("#texto").html(texts[actual-1].id);
-    $("#fecha").html(JSON.stringify(texts[actual-1].data).replace(/"/g,""));
+    $("#fecha").html(JSON.stringify(texts[actual-1].id).replace(/"/g,"") + "/" + total + 
+                     "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + 
+                     JSON.stringify(texts[actual-1].data).replace(/"/g,""));
     $("#texto").html(JSON.stringify(texts[actual-1].text).replace(/<br>/g, "<br>").replace(/<i>/g,"<i>").replace(/<\/i>/g,"</i>").replace(/"/g,""));
 }
