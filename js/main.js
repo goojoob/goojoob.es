@@ -99,6 +99,11 @@ function year2008() {
     muestraTexto()    
 }
 
+function year2009() {
+    actual = 140;
+    muestraTexto()    
+}
+
 function muestraTexto() {
     //$("#texto").html(texts[actual-1].id);
     $("#fecha").html(JSON.stringify(texts[actual-1].data).replace(/"/g,""));
