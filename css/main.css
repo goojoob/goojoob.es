@@ -41,6 +41,15 @@ h6 {
 	left: 40px;
 }
 
+#textoBig {
+    font-size: 200%;
+}
+
+#textoSmall {
+    font-size: 180%;
+}
+
+
 h5 {
 	font-family: 'Open Sans';
     font-size: 100%;
