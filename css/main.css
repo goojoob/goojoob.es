@@ -110,6 +110,7 @@ body {
 
 #fecha {
     text-decoration: underline;
+    text-decoration-style: dotted;
     cursor:pointer;
 }
 
