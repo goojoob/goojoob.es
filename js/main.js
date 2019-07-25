@@ -1,19 +1,15 @@
 var actual = 0;
 var total = 173;
 
-$('#textoBig').click(function() {
-    primero();
-});
-
-$('#textoSmall').click(function() {
-    primero();
-});
-
 $('#last').click(function() {
     ultimo();
 });
 
 $('#next').click(function() {
+    siguiente();
+});
+
+$('#texto').click(function() {
     siguiente();
 });
 

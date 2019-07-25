@@ -165,6 +165,10 @@ a {
     cursor:pointer;
 }
 
+#texto:hover {
+    cursor:pointer;
+}
+
 #center {
     margin:0 auto;
     text-align: center;
