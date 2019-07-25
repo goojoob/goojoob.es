@@ -30,16 +30,75 @@ body {
 }
 
 
-h6 {
-	font-family: 'Open Sans';
-    font-size: 3vw;
-	text-align: left;
-    position: absolute;
-    padding: 0;
-	top: 20px;
-	right: 0;
-	left: 40px;
-}
+@media screen and (max-width: 600px) {
+    h6 {
+        font-family: 'Open Sans';
+        font-size: 2.5vh;
+        text-align: left;
+        position: absolute;
+        padding: 0;
+        top: 40px;
+        right: 0;
+        left: 10px;
+    }
+    
+    h5 {
+        font-family: 'Open Sans';
+        font-size: 2vh;
+        text-align: left;
+        position: absolute;
+        padding: 0;
+        top: 20px;
+        right: 0;
+        left: 15px;
+    }
+
+    h2 {
+        font-family: 'Open Sans';
+        font-size: 3vh;
+    }
+    
+    h1 {
+        font-family: 'Open Sans';
+        font-size: 6vh;
+    }
+  }
+
+
+  @media screen and (min-width: 600px) {
+    h6 {
+        font-family: 'Open Sans';
+        font-size: 4vh;
+        text-align: left;
+        position: absolute;
+        padding: 0;
+        top: 40px;
+        right: 0;
+        left: 50px;
+    }
+    
+    h5 {
+        font-family: 'Open Sans';
+        font-size: 2vh;
+        text-align: left;
+        position: absolute;
+        padding: 0;
+        top: 20px;
+        right: 0;
+        left: 50px;
+    }
+
+    h2 {
+        font-family: 'Open Sans';
+        font-size: 4vh;
+    }
+    
+    h1 {
+        font-family: 'Open Sans';
+        font-size: 5vh;
+    }
+  }  
+
 
 #textoBig {
     font-size: 8vw;
@@ -49,32 +108,18 @@ h6 {
     font-size: 4vw;
 }
 
-
-h5 {
-	font-family: 'Open Sans';
-    font-size: 2vw;
-	text-align: left;
-    position: absolute;
-    padding: 0;
-	top: 0;
-	right: 0;
-	left: 40px;
+#fecha {
+    text-decoration: underline;
+    cursor:pointer;
 }
+
 
 a {
     color: #fff;
     text-decoration: none;
 }
 
-h1 {
-	font-family: 'Open Sans';
-    font-size: 2vw;
-}
 
-h2 {
-	font-family: 'Open Sans';
-    font-size: 4vw;
-}
 
 #central {
     width: 100%;
@@ -101,7 +146,7 @@ h2 {
 }
 #left {
     float:left;
-    width:100px;
+    width:50px;
     text-align: left;
     margin: 0;
     top: 0;
@@ -109,14 +154,18 @@ h2 {
 }
 #right {
     float:right;
-    width:100px;
+    width:50px;
     text-align: right;
     margin: 0;
     background-color: transparent;
 }
+
+#right:hover,#left:hover {
+    cursor:pointer;
+}
+
 #center {
     margin:0 auto;
-    width:500px;
     text-align: center;
     background-color: transparent;
 }

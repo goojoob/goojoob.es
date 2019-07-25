@@ -17,7 +17,7 @@ $('#next').click(function() {
     siguiente();
 });
 
-$('#azar').click(function() {
+$('#sorpresa').click(function() {
     azar();
 });
 
@@ -105,8 +105,10 @@ function year2009() {
 }
 
 function muestraTexto() {
-    $("#fecha").html(JSON.stringify(texts[actual-1].id).replace(/"/g,"") + "/" + total + 
+    $("#fecha").html("<a href='" + JSON.stringify(texts[actual-1].youtube).replace(/"/g,"") + "' target='_blank'>" +
+                     JSON.stringify(texts[actual-1].id).replace(/"/g,"") + "/" + total + 
                      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + 
-                     JSON.stringify(texts[actual-1].data).replace(/"/g,""));
+                     JSON.stringify(texts[actual-1].data).replace(/"/g,"") +
+                     "</a>");
     $("#texto").html(JSON.stringify(texts[actual-1].text).replace(/<br>/g, "<br>").replace(/<i>/g,"<i>").replace(/<\/i>/g,"</i>").replace(/"/g,""));
 }
