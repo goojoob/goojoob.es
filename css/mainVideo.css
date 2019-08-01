@@ -1,0 +1,62 @@
+body {
+    background-color: #000;
+}
+.videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 10;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  iframe {
+    /* optional */
+    width: 100%;
+    height: 100%; 
+  }
+
+  #containerTop {
+    width:90%;
+    height: 10%;
+    margin: 0 auto;
+    top: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative; 
+}
+
+#center {
+    margin:0 auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-family: 'Open Sans';
+        font-size: 3vh;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    h2 {
+        font-family: 'Open Sans';
+        font-size: 4vh;
+    }
+}  
+
+a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor:pointer;
+}
